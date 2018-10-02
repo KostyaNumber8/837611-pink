@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="72" height="22" alt="Логотип Pink">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a>Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#HTMLAcademy">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__wrapper-intro">
+      <section class="intro">
+        <h1 class="intro__title">Фотографии пользователей</h1>
+      </section>
+    </div>
+  </header>
+  <main class="page-photo">
+    <section class="photo-section">
+      <div class="photo-section__wrapper-slogan">
+        <p class="photo-section__content">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
+          хватает ваших?</p>
+      </div>
+      <section class="photo-user">
+        <div class="photo-user__panoram-day">Панорама дня</div>
+        <img class="photo-user__panorama-photo" src="http://placehold.it/150x100" width="320" height="137" alt="Фотография-панорама дня">
+        <article class="photo-user__caption">
+          <h3 class="photo-user__title">Анна
+            <span>(5 минут назад)</span>
+          </h3>
+          <p class="photo-user__content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию
+            в перископе, задавайте свои вопросы!</p>
+          <span class="photo-user__like">Нравится: 215</span>
+        </article>
+      </section>
+      <section class="photo-user">
+        <img class="photo-user__photo-tape" src="http://placehold.it/150x100" width="280" height="180" alt="Фотография">
+        <article class="photo-user__caption">
+          <h3 class="photo-user__title">Левон
+            <span>(5 часов назад)</span>
+          </h3>
+          <p class="photo-user__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <span class="photo-user__like">Нравится: 356</span>
+        </article>
+      </section>
+      <section class="photo-user">
+        <img class="photo-user__photo-tape" src="http://placehold.it/150x100" width="280" height="180" alt="Фотография">
+        <article class="photo-user__caption">
+          <h3 class="photo-user__title">Антон
+            <span>(12 часов назад)</span>
+          </h3>
+          <p class="photo-user__content">Соседи будут рады!</p>
+          <span class="photo-user__like">Нравится: 666</span>
+        </article>
+      </section>
+      <section class="photo-user">
+        <img class="photo-user__photo-tape" src="http://placehold.it/150x100" width="280" height="180" alt="Фотография">
+        <article class="photo-user__caption">
+          <h3 class="photo-user__title">Борис
+            <span>(20 часов назад)</span>
+          </h3>
+          <p class="photo-user__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <span class="photo-user__like">Нравится: 215</span>
+        </article>
+      </section>
+      <section class="photo-user">
+        <img class="photo-user__photo-tape" src="http://placehold.it/150x100" width="280" height="180" alt="Фотография">
+        <article class="photo-user__caption">
+          <h3 class="photo-user__title">Сергей
+            <span>(25 часов назад)</span>
+          </h3>
+          <p class="photo-user__content">Самая кубанская в мире!</p>
+          <span class="photo-user__like">Нравится: 4</span>
+        </article>
+      </section>
+      <section class="photo-user">
+        <img class="photo-user__photo-tape" src="http://placehold.it/150x100" width="280" height="180" alt="Фотография">
+        <article class="photo-user__caption">
+          <h3 class="photo-user__title">Максим
+            <span>(40 часов назад)</span>
+          </h3>
+          <p class="photo-user__content">Где снег-то?</p>
+          <span class="photo-user__like">Нравится: 150</span>
+        </article>
+      </section>
+      <section class="photo-user">
+        <img class="photo-user__photo-tape" src="http://placehold.it/150x100" width="280" height="180" alt="Фотография">
+        <article class="photo-user__caption">
+          <h3 class="photo-user__title">Надежда
+            <span>(45 часов назад)</span>
+          </h3>
+          <p class="photo-user__content">Всем GM и взаимные лайки!</p>
+          <span class="photo-user__like">Нравится: 2560</span>
+        </article>
+      </section>
+    </section>
+    <section class="upload-photo">
+      <form class="upload-photo__form" action="echo" method="post">
+        <div class="upload-photo__content-wrapper">
+          <p class="upload-photo__content">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+        <img class="upload-photo__photo-user" src="http://placehold.it/150x100" width="280" height="374" alt="Фотография">
+        <input class="upload-photo__range" type="range">
+        <div class="upload-photo__button">
+          <input class="upload-photo__button--submit" type="submit" value="Запостить">
+          <input class="upload-photo__button--reset" type="reset" value="Отмена">
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer page-footer--photo">
+    <div class="page-footer__wrapper">
+      <section class="logo page-footer__logo">
+        <a class="logo__footer" href="index.html">
+          <img class="logo__pictures" src="http://placehold.it/150x100" width="147" height="40" alt="Логотип Pink">
+        </a>
+      </section>
+      <div class="page-fotter__social social">
+        <ul class=" social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#twitter">
+              <img class="social__icon" src="http://placehold.it/150x100" width="46" height="46" alt="Логотип twitter">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#facebook">
+              <img class="social__icon" src="http://placehold.it/150x100" width="46" height="46" alt="Логотип facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#youtube">
+              <img class="social__icon" src="http://placehold.it/150x100" width="46" height="46" alt="Логотип youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <img class="copyright__pictures" src="http://placehold.it/150x100" width="27" height="34" alt="Логтоип HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
