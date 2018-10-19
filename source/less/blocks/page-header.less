@@ -2,15 +2,40 @@ body {
     font-family: sans-serif;
     width: 320px;
     margin: 0 auto;
+    border-left: 1px solid #e9ebec;
+    border-right: 1px solid #e9ebec;
 }
 
 .page-header {
+    display: flex;
     width: 320px;
     margin: 0 auto;
     background-color: #283645;
 }
 
+.page-header__logo {
+    display: block;
+    margin-top: 22px;
+    margin-left: 20px;
+}
+
+.main-nav__toggle {
+    display: block;
+    margin-top: 21px;
+    margin-left: 250px;
+    height: 24px;
+    width: 50px;
+    background-image: url(../img/icon-menu-burger.svg);
+    border: none;
+    background-color: #283645;
+}
+
+.main-nav {
+    margin-left: -92px;
+}
+
 .main-nav__list {
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -21,7 +46,7 @@ body {
     text-align: center;
 }
 
-.site-list__item--link {
+.site-list__item-link {
     display: block;
     color: #fff;
     text-decoration: none;
